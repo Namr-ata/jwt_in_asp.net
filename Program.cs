@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TokenAuthDemo.Data;
 
@@ -30,8 +32,8 @@ builder.Services.AddAuthentication(x =>
     {
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(key),
-        ValidIssuers = new string[] { Configuration["Jwt:Issuer"] },
-        ValidAudiences = new string[] { Configuration["Jwt:Issuer"] },
+        ValidIssuers = new string[] { builder.Configuration["Jwt:Issuer"] },
+        ValidAudiences = new string[] { builder.Configuration["Jwt:Issuer"] },
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidateLifetime = true

@@ -74,3 +74,5 @@ D:\.net\TokenAuthDemo\TokenAuthDemo\obj\Debug\net6.0\refint\TokenAuthDemo.dll
 D:\.net\TokenAuthDemo\TokenAuthDemo\obj\Debug\net6.0\TokenAuthDemo.pdb
 D:\.net\TokenAuthDemo\TokenAuthDemo\obj\Debug\net6.0\TokenAuthDemo.genruntimeconfig.cache
 D:\.net\TokenAuthDemo\TokenAuthDemo\obj\Debug\net6.0\ref\TokenAuthDemo.dll
+D:\.net\TokenAuthDemo\TokenAuthDemo\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\.net\TokenAuthDemo\TokenAuthDemo\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
